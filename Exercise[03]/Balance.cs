@@ -2,6 +2,7 @@
 
 public static class Balance
 {
+    // Key => '<' & value => '>' \\
     static Dictionary<char, char> pairs = new()
     {
         { '<', '>' },
@@ -9,6 +10,8 @@ public static class Balance
         { '(', ')' },
         { '[', ']' },
     };
+
+    // Extension Method
     public static bool IsBalanced(this string text)
     {
         Stack<char> brackets = new();
@@ -18,8 +21,7 @@ public static class Balance
             {
                 if (pairs.Keys.Contains(t))
                     brackets.Push(t);
-                else
-                    if (pairs.Values.Contains(t))
+                else if (pairs.Values.Contains(t))
                 {
                     if (t == pairs[brackets.Peek()])
                         brackets.Pop();
@@ -36,4 +38,6 @@ public static class Balance
         }
         return brackets.Count() == 0 ? true : false;
     }
+
+
 }

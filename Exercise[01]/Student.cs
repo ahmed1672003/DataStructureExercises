@@ -2,9 +2,9 @@
 
 public struct Student
 {
-    public string Name { get; init; }
-    public int Age { get; init; }
-    public double TotalDegrees { get; init; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public double TotalDegrees { get; set; }
     public Student() { }
 
     public override string? ToString() =>

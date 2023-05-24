@@ -38,6 +38,4 @@ public static class Balance
         }
         return brackets.Count() == 0 ? true : false;
     }
-
-
 }

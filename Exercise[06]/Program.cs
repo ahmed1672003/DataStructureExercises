@@ -16,13 +16,13 @@ internal class Program
         repository.Add(new()
         {
             Number = 2,
-            Name = "Ahmed",
+            Name = "Amr",
             Degrees = new double[5] { 60, 70, 80, 90, 100 }
         });
         repository.Add(new()
         {
             Number = 3,
-            Name = "Ahmed",
+            Name = "Mohamed",
             Degrees = new double[5] { 60, 70, 80, 90, 100 }
         });
         repository.Add(new()

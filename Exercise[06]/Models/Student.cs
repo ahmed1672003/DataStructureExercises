@@ -13,15 +13,15 @@ public class Student
             if (percentages < 0)
                 return "error !";
             else if (percentages > 0 && percentages < 60)
-                return $"failed ! & percentages: {percentages}";
+                return $"Failed ! & percentages: {percentages}%";
             else if (percentages >= 60 && percentages < 65)
-                return $"Acceptable ! & percentages: {percentages}";
+                return $"Acceptable ! & percentages: {percentages}%";
             else if (percentages >= 65 && percentages < 70)
                 return $"Good ! & percentages: {percentages}";
             else if (percentages >= 70 && percentages < 85)
-                return $"Very Good ! & percentages: {percentages}";
+                return $"Very Good ! & percentages: {percentages}%";
             else if (percentages >= 85 && percentages <= 100)
-                return $"Excellent ! & percentages: {percentages}";
+                return $"Excellent ! & percentages: {percentages}%";
             else
                 return $"error !";
         }
@@ -29,6 +29,5 @@ public class Student
 
     public override string ToString() =>
         $"number: {Number} , name: {Name} , Total: {Degrees.Sum()} , grade: {Grade}";
-
 }
 

@@ -18,7 +18,7 @@ public static class Helper
             switch (option)
             {
                 case "1":
-                    GarageCaseOneEntrance.Push(new() { Letters = "abd", Number = 123 });
+                    GarageCaseOneEntrance.Push(new() { Letters = "abc", Number = 123 });
                     Console.ReadKey();
                     break;
                 case "2":

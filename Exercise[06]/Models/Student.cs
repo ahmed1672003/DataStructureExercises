@@ -28,7 +28,7 @@ public class Student
     }
 
     public override string ToString() =>
-        $"number: {Number} , name: {Number} , Total: {Degrees.Sum()} , grade: {Grade}";
+        $"number: {Number} , name: {Name} , Total: {Degrees.Sum()} , grade: {Grade}";
 
 }
 

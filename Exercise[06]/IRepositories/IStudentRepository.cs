@@ -8,6 +8,4 @@ public interface IStudentRepository
     void Delete(int number);
     Student[] Display(Func<Student, bool> filter = null);
     void Resize(int newSize);
-
-
 }

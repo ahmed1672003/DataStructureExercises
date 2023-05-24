@@ -32,11 +32,16 @@ internal class Program
             Degrees = new double[5] { 60, 70, 80, 90, 100 }
         });
 
+        repository.Edit(new()
+        {
+            Number = 1,
+            Name = "Ahmed",
+            Degrees = new double[5] { 50, 50, 50, 50, 50 }
+        }, 1);
+        //repository.Delete(1);
 
-        repository.Delete(1);
-
-
-        var result = repository.Display();
+        // filter to search by name if contains or not
+        var result = repository.Display(e => e.Name.Contains("Ahm"));
         result.PrintStudents();
     }
 }

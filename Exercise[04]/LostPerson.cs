@@ -31,7 +31,7 @@ public class LostPerson
                     {
                         Console.WriteLine($"step:[{steps.Peek()}]");
                     }
-                    catch (Exception)
+                    catch
                     {
                         Console.WriteLine("no steps founded !");
                     }
@@ -42,7 +42,7 @@ public class LostPerson
                         Console.WriteLine($"step:[{steps.Pop()}]");
                         counetr--;
                     }
-                    catch (Exception)
+                    catch
                     {
                         Console.WriteLine("no steps founded !");
                     }
